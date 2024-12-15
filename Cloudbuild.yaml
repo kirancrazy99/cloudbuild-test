@@ -1,8 +1,6 @@
 options:
   logging: CLOUD_LOGGING_ONLY  # or use 'logs_bucket' to store logs in GCS
-  logs_bucket: gs://kiran32/
-
-
+  
 steps:
   # Step 1: Build the Docker image and tag it with Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
